@@ -1,0 +1,32 @@
+License Choice (3–4 sentences):
+I choose the MIT License because it provides a permissive, minimal-obligation structure ideal for open collaboration. Unlike the GPL, it doesn’t require derivative works to also be open-source, allowing more flexibility in commercial use. Compared to the Apache License, it’s simpler and easier to adopt, though it lacks an explicit patent grant. The MIT License is suitable here as the project prioritizes broad adoption and community contribution without heavy compliance burdens.
+
+Initial Vulnerability Report Template:
+
+Reporter Contact Info: Name, Email, Optional PGP Key
+
+Affected Product/Version: Product name and version number
+
+Environment: OS, architecture, deployment specifics (e.g., container, cloud)
+
+Summary of Vulnerability: High-level, reproducible description without exploit details
+
+Potential Impact: Data loss, privilege escalation, DoS, etc.
+
+Mitigation/Workaround (if any): Known temporary solutions
+
+Coordination Timeline: Date reported, response acknowledged, proposed disclosure date
+
+Justification (1 short paragraph):
+This approach follows best practices outlined by the CISA Vulnerability Disclosure Policy (VDP)
+, which encourages transparent, coordinated reporting processes that protect both researchers and vendors. Similarly, the license selection aligns with the Open Source Initiative’s (OSI) guidelines on permissive licenses
+, promoting innovation through legal simplicity and openness.
+
+Evidence Links:
+
+[Case Brief PDF] https://docs.google.com/document/d/16i0gJKVGkh1tK8giDJDudYMi2QZkMgV57a9pPJxwmi4/edit?tab=t.0#heading=h.9un98u210a9m
+
+[Reflection PDF] https://docs.google.com/document/d/109tLw0BPmzweRCGJKm9eXgInPIylo-9Vcdy7Pk9cHOs/edit?tab=t.0
+
+Reflection (3–4 sentences):
+Next, I would refine the coordination process to ensure quicker response times and clearer communication paths for security researchers. Automating triage for incoming reports and defining severity-based SLAs would benefit both vendors and users. Stakeholders like developers, users, and security teams would gain from a more structured and predictable vulnerability handling cycle. This refinement would enhance trust, minimize risk exposure, and improve patch turnaround times.

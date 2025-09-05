@@ -1,0 +1,48 @@
+Facts (≤10 bullets)
+A proprietary software tool was developed and released by a company.
+
+Developers unknowingly incorporated a library licensed under the GNU General Public License (GPL).
+
+The proprietary tool was distributed to external customers.
+
+No source code was provided with the shipped product.
+
+The GPL code was modified slightly to fit the proprietary tool.
+
+The company did not inform users of the GPL code use.
+
+An external developer discovered the inclusion via reverse engineering.
+
+The original GPL project maintainers have been notified.
+
+The legal team was unaware of open-source obligations before shipping.
+
+The company wants to remediate the issue without significant reputational harm.
+
+Issues (1–3 legal/technical questions)
+Does incorporating GPL code into a proprietary tool and distributing it constitute creating a derivative work?
+
+What are the company’s obligations under the GPL when distributing a binary that includes GPL-licensed code?
+
+Can the company continue distributing the product without open-sourcing the entire proprietary tool?
+
+
+Ethical Analysis (1 paragraph)
+Using Kantian ethics, the company had a duty to respect the terms of the GPL license and the developers who contributed to the open-source community. Kantian ethics emphasizes doing the right thing regardless of consequences; by ignoring or neglecting the GPL obligations, the company treated the open-source authors as a means to an end. Ethically, the company must now act transparently and responsibly by acknowledging the oversight and taking corrective steps.
+
+Legal/Policy Analysis (1 paragraph)
+Under the GPL v3 license, any software that incorporates GPL-licensed code and is distributed must also be licensed under the GPL. This includes an obligation to make the entire source code available under the same license. Failing to do so violates the license and can expose the company to legal liability. The proprietary tool, as distributed, is considered a derivative work; thus, the company cannot continue distribution without either removing the GPL code or releasing the full source.
+
+Decision & Rationale (1 paragraph)
+The company should immediately halt distribution, audit the codebase, and remove the GPL-licensed component. A clean replacement with a permissively licensed or in-house developed alternative should be implemented. Alternatively, if business goals allow, the company could relicense and open-source the entire product, but this may not be feasible. Remediation should include public acknowledgment, communication with the GPL code authors, and a revised open-source policy.
+
+Alternatives Considered (bullets)
+Replace GPL component with MIT/BSD licensed alternative (chosen).
+
+Seek dual-licensing from GPL code author (unlikely to be granted).
+
+Open-source the entire proprietary tool (high business impact).
+
+Continue distribution and hope for no legal action (unethical and high-risk).
+
+Restrict distribution to internal use only (does not resolve past violations).

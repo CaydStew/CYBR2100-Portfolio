@@ -1,0 +1,19 @@
+What I Learned
+Through comparing the MIT, GPL, and Apache licenses, I gained a clearer understanding of how open-source obligations differ across commonly used licenses. The MIT License is the most permissive—it requires only attribution and allows virtually unrestricted use, even in proprietary software. The GPL (General Public License), by contrast, imposes copyleft: if you distribute derivative works, you must release them under the same GPL license. This ensures software freedom is preserved downstream but makes GPL code harder to integrate into non-GPL projects. The Apache License 2.0 strikes a middle ground. Like MIT, it allows permissive use, but it also includes an explicit patent grant. This protects users from future patent claims by contributors—a feature the MIT license lacks. Importantly, Apache-licensed code can be used in proprietary projects without needing to release source code, as long as attribution and the license text are included. These differences align with points raised in Ethics in Technology, which emphasized balancing innovation with transparency and user rights. The Open Source Initiative’s “Choose a License” tool helped clarify license compatibility and reinforced that licensing is not just legal formality—it’s an ethical choice that affects users and developers alike.
+
+How I’ll Apply It
+For a set of annotated notes I created during my cyber ethics course, I would choose the MIT License.
+
+Distribution: While the notes were originally made for personal study, the MIT license would allow me to share them on a class forum or GitHub so other students can benefit—without worrying about complex legal restrictions.
+
+Compatibility: Since I referenced and built on open educational resources (OER), the MIT license’s permissiveness helps ensure my notes can be freely reused or remixed.
+
+Obligations: The only requirement is to give proper attribution, which aligns well with academic integrity and ethical sharing practices.
+
+Muddiest Point
+One area that remains unclear is the scope of copyleft under the GPL when linking code. Specifically: If I dynamically link a GPL library in a proprietary application, do I have to open-source the entire application, or just the interface? There seems to be debate around this, with some interpretations suggesting that dynamic linking avoids full copyleft obligations, while others argue that even linking constitutes a derivative work. How does this interpretation hold up legally, especially given dual-licensed libraries that use GPL alongside more permissive terms?
+
+Portfolio Note
+I will publish a short blog post comparing MIT and GPL licenses with examples.
+
+I’ll also share a flowchart showing how to choose a license ethically based on use case. These pieces matter because they help new developers understand that open-source licensing is about responsibility, not just access.
