@@ -1,0 +1,28 @@
+What I Learned
+
+The NIST incident response lifecycle outlines a structured approach to handling cybersecurity incidents through four key phases: Preparation, Detection and Analysis, Containment, Eradication, and Recovery, and Post-Incident Activity. Preparation ensures that policies, tools, and people are ready before an incident occurs. Detection and Analysis involve identifying incidents accurately and assessing their scope. Containment, Eradication, and Recovery aim to limit damage, remove threats, and restore systems. Finally, Post-Incident Activity emphasizes learning and improvement.
+
+A key principle throughout this lifecycle is applying the minimum necessary standard—collecting or exposing only the data required to address the incident. This aligns with the eBook's emphasis on harm prevention by reducing the risk of privacy violations, overexposure of sensitive data, and unintentional damage to systems or reputations. Ethical incident response must balance urgency with restraint, ensuring actions are proportionate, authorized, and respect individual rights and organizational policies.
+
+How I’ll Apply It
+ In a realistic campus IT department scenario, suppose a phishing email leads to suspicious login attempts across multiple faculty accounts. I would capture:
+System access logs showing login attempts, timestamps, and IP addresses.
+
+
+The original phishing email, including full headers.
+ These provide valuable evidence for tracing the source and understanding the attack vector, all within a scope limited to affected accounts.
+ I would avoid capturing the full content of faculty inboxes without explicit consent or legal authority. Doing so could violate privacy policies and exceed the “minimum necessary” principle. Consent, relevance, and impact must guide what data is appropriate to review.
+
+
+Muddiest Point
+ One area that remains unclear is how detailed chain-of-custody documentation needs to be when collecting digital logs from multiple systems. Is it sufficient to log the system name, date, and collector identity, or must each file or data object be individually logged with checksums?
+ Also, when redacting sensitive data (e.g., student info) for analysis, what level of redaction ensures compliance without compromising investigative value?
+ Lastly, in containment decisions, how do you balance operational downtime with incident spread—especially in resource-constrained environments?
+
+Portfolio Note
+I’ll publish a short briefing article on “Respecting Privacy During Incident Response,” using this scenario.
+
+It matters because it highlights how ethical decisions made in the first hour shape both technical outcomes and stakeholder trust.
+
+
+

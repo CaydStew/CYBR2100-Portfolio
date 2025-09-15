@@ -1,0 +1,51 @@
+Timestamp & Context
+● Initial Alert: Report received from Sam Rivera (sam.rivera@hocking.example) 
+on Thursday, Sep 11, 2025 at 13:15 UTC.
+● Sam reported a suspicious email received from donotreply@blackboard.com
+containing an attachment titled Registration.pdf.html.
+● The message was purportedly about a professional development webinar 
+registration.
+Authorization
+● Action approved by Dr. Elena Marks, IT Security Officer, at 13:20 UTC via 
+Teams message.
+● Scope authorized: Initial evidence preservation, file analysis, and phishing 
+verification (no containment needed at this stage).
+Actions Taken
+● Opened and analyzed email headers using Outlook message source and verified 
+SMTP path.
+● Extracted and saved raw .eml file from email server for evidence.
+● Scanned attachment Registration.pdf.html using VirusTotal and local 
+sandbox (Cuckoo).
+● Viewed HTML structure; identified embedded <form> with POST action targeting 
+external domain:
+https://cdn-blackboard-mail.center/submit.
+● Verified the domain is not associated with the official Blackboard platform.
+Evidence Captured
+● Saved email headers and full message as .eml file:
+\\investigations\incident_20250911_srivera\phish_email.eml
+● Saved malicious attachment:
+\\investigations\incident_20250911_srivera\Registration.pdf
+.html
+● SHA256 hash (attachment):
+ea8b84b9fa514de47892c5bdeaa5eac8e0a420d3e89e2edbda3b347c3dd
+4e34c
+● Evidence limited to one user copy of the email and HTML attachment as no 
+execution occurred.
+Chain of Custody
+● Evidence stored in secured forensic share 
+\\investigations\incident_20250911_srivera at 13:30 UTC.
+● ○ Analyst: [Your Name] (created folder, saved files)
+○ Supervisor: Elena Marks (read-only access verified at 13:45 UTC)
+Accessed by:
+Redaction
+● Removed Sam Rivera’s email address from distributed evidence copies to 
+protect user PII.
+● Sanitized copy of HTML attachment created without <input> elements for 
+educational use.
+Next Step Recommendation
+● No containment required as the user did not interact with the attachment.
+● ○ Block blackboard-mail.center at the gateway level.
+○ Alert users about targeted phishing using spoofed webinar invites.
+Recommend email blocklist update:
+● Submit domain for takedown request via hosting provider/PhishTank.
+● Monitor mail logs for further delivery attempts from the same IP 192.0.2.66.

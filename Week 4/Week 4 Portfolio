@@ -1,0 +1,71 @@
+My First-Hour Priorities
+
+Preserve original message and headers: Email headers provide origin and routing information vital for verifying spoofing and identifying the delivery method.
+
+Analyze attachment in an isolated environment: Prevents accidental execution of malicious payloads during triage.
+
+Avoid blocking or takedown actions too early: Preserves the infrastructure for ongoing monitoring or intelligence gathering.
+
+Document analyst decisions and approvals immediately: Maintains audit trail and proves proper authorization steps were followed.
+
+Incident & Evidence Note (Final)
+
+Timestamp & Context:
+Alert received from Sam Rivera ([REDACTED]) on Thursday, Sep 11, 2025 at 13:15 UTC, regarding a suspicious email from donotreply@blackboard.com with an attached file titled Registration.pdf.html. The email claimed to offer registration for a professional development webinar.
+
+Authorization:
+Action authorized by Dr. Elena Marks, IT Security Officer, at 13:20 UTC via Teams. Approved for: evidence preservation, file analysis, phishing verification (no containment needed).
+
+Actions Taken:
+
+Extracted .eml file from mail server and analyzed full headers.
+
+Scanned attachment using VirusTotal and Cuckoo sandbox.
+
+Found HTML <form> POST to https://cdn-blackboard-mail.center/submit, an external and unauthorized domain.
+
+Verified the domain is not affiliated with the real Blackboard platform.
+
+Evidence Captured:
+
+Email message (phish_email.eml)
+
+HTML attachment (Registration.pdf.html)
+
+SHA256 (attachment):
+ea8b84b9fa514de47892c5bdeaa5eac8e0a420d3e89e2edbda3b347c3dd4e34c
+
+Files stored at:
+\\investigations\incident_20250911_srivera\
+
+Chain of custody maintained (Analyst: [Your Name]; Supervisor: Elena Marks)
+
+Redaction Policy:
+
+Removed reporter’s email address from distributed artifacts.
+
+Created a sanitized HTML version with <input> elements removed for instructional use.
+
+Next Step Recommendations:
+
+Block blackboard-mail.center at gateway.
+
+Submit domain for takedown via PhishTank or host provider.
+
+Alert staff of targeted phishing campaign.
+
+Monitor for IP 192.0.2.66 in mail logs.
+
+Integrity & Privacy Controls
+
+All artifacts were hashed using SHA-256 and stored in a secured, access-controlled forensic share (\\investigations\...). No credentials or execution artifacts were found, and no user interaction occurred. Redaction was applied to user PII (email) before sharing. A sanitized version of the attachment was prepared for safe educational use.
+
+Evidence Links
+
+Phishing Investigation: https://docs.google.com/document/d/1piIQcR6rfOED78rHJFSRy3u1CWUvU_HRVuMbN7eF8Gw/edit?tab=t.0#heading=h.mktrksw3rnnz
+
+Reflection: https://docs.google.com/document/d/1eJQ8rw60D_3EIgjTXCGQ2St_1KrAJmhqR-eqGPJIq1U/edit?tab=t.0
+
+Reflection
+
+In retrospect, I would revisit the timing of the domain analysis—relying initially on passive tools like VirusTotal delayed identifying the phishing infrastructure. A deeper, earlier DNS lookup might have helped. Also, I’d prepare a reusable playbook for phishing triage to improve response consistency and reduce decision fatigue.
