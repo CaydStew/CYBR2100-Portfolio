@@ -1,0 +1,154 @@
+1. ROE Outline (Final)
+Purpose & Approvals
+
+Purpose:
+This Rules of Engagement (ROE) document defines the authorized scope, procedures, and roles for conducting ethical cybersecurity testing on selected systems. The primary objective is to protect organizational assets while minimizing disruption and risk.
+
+Rationale:
+Clearly defining ROE ensures compliance with legal and ethical standards, and helps reduce potential operational impacts during testing activities.
+
+Approving Authorities:
+
+Chief Information Security Officer (CISO)
+
+Legal Counsel
+
+IT Operations Manager
+
+Business Unit Owner(s)
+
+Required Signatures:
+
+Testing Coordinator (myself)
+
+Approving Authority (CISO or designee)
+
+Target Environment Owner
+
+Scope & Authorization
+
+In-Scope Systems:
+
+Internal web applications (e.g., HR portal, Inventory Database)
+
+Network infrastructure (e.g., 10.10.0.0/24 subnet)
+
+Cloud-hosted services owned by the organization
+
+Out-of-Scope Systems:
+
+Third-party SaaS platforms
+
+PII (Personally Identifiable Information) data stores
+
+Legacy systems labeled “Do Not Touch”
+
+Authorization Statement:
+Testing is explicitly authorized by [Company Name] and must remain within the defined scope. Any unauthorized activity beyond this scope is prohibited and may result in academic or legal consequences.
+
+Timing & Deconfliction
+
+Authorized Testing Period:
+
+September 25–27, 2025
+
+From 12:00 AM to 6:00 AM ET (low-impact hours)
+
+Testing Restrictions:
+
+No testing during patch cycles (e.g., Tuesdays from 10:00 AM–2:00 PM ET)
+
+Blackout date: September 24 due to fiscal reporting
+
+Deconfliction Measures:
+
+I will coordinate with IT Operations through a shared calendar and provide at least 24 hours’ notice to stakeholders before beginning any test.
+
+Communications & Escalation
+
+Primary Contacts:
+
+Myself (Testing Lead): [Your Name, phone, email]
+
+Network Administrator: [Name, contact info]
+
+Incident Response Contact: [Name, contact info]
+
+Notification Requirements:
+
+Pre-test notification: Minimum 24 hours in advance
+
+Post-test summary: Delivered within 12 hours of completion
+
+Escalation Protocols:
+
+If system instability or business impact is observed, testing will stop immediately.
+
+The keyword “STOPTEST” will be used via Slack or MS Teams to signal an emergency halt.
+
+Data Handling
+
+Collection Principles:
+Only data required to validate test findings will be collected.
+
+Storage Location:
+
+Encrypted storage: \\secure\ROE_Test_Logs
+
+Access is restricted to myself and any authorized audit personnel.
+
+Retention and Deletion:
+
+Logs will be retained for 30 days post-test.
+
+All related files will be deleted after final reporting unless retention is required.
+
+Redaction Policies:
+
+PII and sensitive identifiers will be removed from screenshots and documentation.
+
+Where possible, usernames and IP addresses will be anonymized.
+
+Reporting & Handoff
+
+Report Structure:
+
+Executive Summary for non-technical stakeholders
+
+Severity-ranked Technical Findings
+
+Remediation Recommendations
+
+Delivery Schedule:
+
+Preliminary report: Delivered within 48 hours of testing
+
+Final report: Submitted within 7 business days
+
+Remediation Process:
+
+Issues will be documented in JIRA and assigned to responsible teams
+
+Fixes will be verified during a retest period
+
+Final reports will be archived in a secure compliance repository
+
+2. Consent/Authorization Snippet
+
+I received formal approval to conduct cybersecurity testing activities limited to the systems and timeframe defined in this ROE. All actions are governed by ethical standards and legal requirements, and testing will be halted immediately if any system or user is negatively affected.
+
+3. Escalation Contacts
+Role	Name	Availability	Stop-Test Trigger
+Testing Lead (Myself)	24/7 during test window	Scope breach, major vulnerability, or service issue
+Network Administrator	8 AM–6 PM ET	Unusual traffic, instability, or system alert
+Incident Response Lead	On-call	Indicators of compromise or data exposure
+4. Evidence Links
+
+ ROE Document (PDF): https://docs.google.com/document/d/1cuzAR41k38mAkwwA8EQlN3ceYhfDM1L2RENGhkxZsio/edit?tab=t.0
+
+ Week 5 Reflection (PDF): https://docs.google.com/document/d/1xhMwc3NpUGv8B8t4LQFDOQums7MO3_Z3H7Q0lfMkzcA/edit?tab=t.0
+
+
+5. Reflection
+
+One decision I would reconsider is the exclusion of legacy systems from the test scope. Although they were deemed unstable, such systems often carry significant risk and could be exploited by attackers. A limited, read-only assessment might have revealed important vulnerabilities without introducing disruption. In future assessments, I would aim for a more nuanced approach to legacy systems rather than omitting them entirely.
