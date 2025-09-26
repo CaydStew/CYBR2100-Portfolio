@@ -1,0 +1,59 @@
+Policy Snippet (Final)
+
+As part of my approach to integrating AI responsibly into security operations, I propose the following personal policy framework:
+
+AI tools will support—rather than replace—human decision-making in critical security tasks such as threat detection, incident response, and log analysis.
+
+I will only use AI systems that provide transparency, auditability, and documented safeguards against bias.
+
+I will avoid using any AI models that function as “black boxes” for high-impact decisions, such as user access denial, legal reporting, or HR-related investigations.
+
+Any outputs from AI systems used in a decision-making context will be verified by human review before action is taken.
+
+This policy reflects ethical considerations, legal compliance, and practical safeguards to ensure AI enhances rather than undermines security operations.
+
+Controls & Metrics
+
+Control 1: AI Tool Audit Review
+
+Metric: Audit logs must be reviewed for each AI tool at least once per academic term.
+
+Cadence: Per term
+
+Control 2: Bias and Fairness Testing
+
+Metric: AI models must be tested for fairness and bias every 6 months.
+
+Cadence: Semi-annually
+
+Control 3: Human Oversight Protocol
+
+Metric: 100% of major AI-generated security alerts must be validated by a human before action.
+
+Cadence: Ongoing
+
+Control 4: Ethical Vendor Use
+
+Metric: Only AI tools with clear documentation and ethical certifications will be used.
+
+Cadence: Prior to use
+
+Control 5: Continuous Learning
+
+Metric: Complete at least one AI ethics or cybersecurity training per year.
+
+Cadence: Annually
+
+Justification
+
+These controls help mitigate the ethical and operational risks of using AI in security work. As discussed in Chapter 11 of the course textbook, risk management in AI requires transparency, accountability, and human judgment. Regular audits and fairness checks ensure that the tools I use don’t produce biased or harmful results. Human validation is especially critical to prevent false positives or over-enforcement based on algorithmic decisions. These practices support both ethical integrity and operational reliability in AI-assisted security.
+
+Evidence Links
+
+[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
+[Microsoft Responsible AI Standard](https://www.microsoft.com/en-us/ai/responsible-ai)
+
+Reflection
+
+One trade-off I would reconsider is how often I conduct fairness testing. While semi-annual assessments might be enough for static models, models that adapt or retrain over time could develop biases more quickly. Increasing the frequency of these reviews would improve ethical oversight but could be time-consuming without automated tools. In the future, I might explore incorporating more efficient fairness assessment tools or setting thresholds to trigger unscheduled audits. I also recognize that excluding black-box models entirely might limit my access to powerful tools—but for now, I value explainability over performance in critical decisions.
