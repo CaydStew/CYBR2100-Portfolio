@@ -1,0 +1,84 @@
+Lab/Project Ethics Addendum (Final)
+
+1. Protocol Approval & Roles
+IRB or Equivalent Approval: The study must receive prior approval from Hocking College’s research oversight body (IRB or appointed ethics committee).
+
+
+Faculty Sponsor: A Hocking College faculty member will act as the Principal Investigator, responsible for supervising the project and ensuring all protocols are followed.
+
+
+Medical/Safety Consultant: If necessary, consultation with Hocking College Health Services or an external licensed medical professional will be arranged to address any health or safety concerns.
+
+
+2. Informed Consent
+Plain-Language Notice: All participants will be provided with a clear, jargon-free description of the study’s purpose, procedures, expected duration, and any data collected.
+
+
+Risks and Benefits: Risks (e.g., minor discomfort from wearables, privacy concerns) and benefits (e.g., personal health data insights, contribution to research) will be fully disclosed.
+
+
+Voluntary Participation: Participation is 100% voluntary. Individuals may withdraw at any time without penalty, and their data will be removed upon request.
+
+
+3. Scope & Prohibitions
+No Unauthorized Self-Experimentation: Self-testing is prohibited unless conducted under faculty supervision and approved through official channels.
+
+
+No Invasive Procedures: Only non-invasive, externally worn devices (e.g., smartwatches, EEG headbands) are permitted.
+
+
+Approved Equipment Only: All devices used must be pre-approved by the faculty sponsor and verified as safe for educational research.
+
+
+4. Data Handling
+Minimum Necessary Data: Only essential data (e.g., heart rate, EEG signals, motion data) will be collected to meet project goals.
+
+
+Secure Storage & Deletion: Data will be stored securely using encrypted digital storage. Data will be deleted or anonymized within [insert retention timeline, e.g., 30 days] after project completion.
+
+
+Access & Redaction: Only authorized project members and faculty will have access to raw data. Personal identifiers will be removed or redacted wherever possible.
+
+
+5. Incident & Withdrawal Process
+Stop-Test Conditions: Any sign of distress, discomfort, equipment malfunction, or participant request will immediately suspend participation.
+
+
+Adverse Event Contact: Participants can report issues to the Faculty Sponsor or Hocking College Health Services at [insert appropriate contact info].
+
+
+Withdrawal Protocol: Upon withdrawal, all data linked to the participant will be permanently removed within 48 hours, and a confirmation will be provided.
+
+Equity & Access Analysis
+
+Who benefits or loses from your system or tool? Who might be unintentionally excluded or harmed? How are you addressing this?
+
+Example:
+
+The tool benefits environmentally conscious users with reliable internet access. However, individuals in underserved communities or those with limited digital literacy may struggle to use it effectively. To mitigate this, the interface was designed with mobile-first accessibility, clear visuals, and offline functionality where feasible.
+
+Justification
+
+Use plain language to cite bioethics principles (Ch. 12) and societal impact concepts (Ch. 13).
+
+Example:
+
+Following bioethics principles from Chapter 12, especially respect for autonomy and beneficence, the tool ensures users opt in before data is stored and provides transparent explanations. Chapter 13's focus on broader societal impacts guided our decision to open-source the code to promote transparency and reduce systemic inequality in access.
+
+Evidence Links
+
+Provide links to any sources, tools, frameworks, or documentation you referenced, including relevant GitHub issues, accessibility guidelines, etc.
+
+Example:
+
+Web Content Accessibility Guidelines (WCAG)
+
+GitHub Repo – Issue #12: Consent Implementation
+
+Reflection
+
+3–4 sentences on trade-offs you’d reconsider (risk, consent, inclusion, etc.).
+
+Example:
+
+Looking back, I would revisit the decision to store anonymized usage data, as even minimal data collection can raise concerns. The threshold for risk was set conservatively, but more user testing could have clarified where users felt most vulnerable. I’d also expand consent dialogs to include clearer opt-outs. Trade-offs between simplicity and transparency remain a challenge.
